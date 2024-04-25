@@ -4,8 +4,8 @@ import { FiAlignJustify } from "react-icons/fi";
 import { FiAlignLeft } from "react-icons/fi";
 // import { AuthContext } from '../../AuthProvider';
 const NavBar = () => {
-  // const {user,logout} = useContext(AuthContext)
-  const [open,setopen]=useState(false)
+// const {user,logout} = useContext(AuthContext)
+const [open,setopen]=useState(false)
 //   const handlelogout = ()=>{
 //     logout()
 //     .then(() => {
@@ -16,9 +16,10 @@ const NavBar = () => {
 //   }
     const links = <>   
      <li><NavLink  to='/'>Home</NavLink></li>
-     <li><NavLink to='/updateprofile'>Update Profile</NavLink></li>
-     <li><NavLink to='/team'>Team</NavLink></li>
+     <li><NavLink to='/alltourists'>All Tourists Spot</NavLink></li>
+     <li><NavLink to='/addtourists'>Add Tourists Spot</NavLink></li>
      <li><NavLink to='/register'>Register</NavLink></li>
+     <li><NavLink to='/login'>Login</NavLink></li>
     
     
     </>
@@ -40,8 +41,8 @@ const NavBar = () => {
         
           </div>
        <div className='flex gap-2 items-center'> 
-       <img src="https://i.ibb.co/y4MTQqK/logo.jpg"  className='w-10 ' alt="" />
-          <a className="text-xs md:text-2xl lg:text-3xl flex items-center font-bold font-merriweather">Horizon Journeys</a>
+       <img src="https://i.ibb.co/0msGQKh/images-1.png"  className='w-10 ' alt="" />
+          <a className="text-xs md:text-2xl lg:text-3xl flex items-center font-bold font-merriweather">Horizon Travel</a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
