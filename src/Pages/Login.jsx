@@ -1,11 +1,14 @@
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
 import NavBar from "../Components/NavBar";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { BiSolidLogInCircle } from "react-icons/bi";
 import { useContext, useState } from "react";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+import toast from 'react-hot-toast';
+
 import { Helmet } from "react-helmet-async";
 import Footer from "../Components/Footer";
 
@@ -30,7 +33,13 @@ const Login = () => {
     // signin user
     loginuser(email,password)
     .then((userCredential) => {
-    toast.success("Logged in Successfully")
+      Swal.fire({
+        position: "middle",
+        icon: "success",
+        title: "Logged in Successfully",
+        showConfirmButton: false,
+        timer: 1500
+      });
 
     navigate(location?.state ? location.state : '/login');
  
@@ -44,7 +53,13 @@ const Login = () => {
     googleLogin()
     .then(result => {
         console.log(result.user)
-    toast.success("Logged in Successfully")
+        Swal.fire({
+          position: "middle",
+          icon: "success",
+          title: "Logged in Successfully",
+          showConfirmButton: false,
+          timer: 1500
+        });
     navigate(location?.state ? location.state : '/login');
     })
     .catch(error => {
@@ -57,7 +72,13 @@ githubLogin()
 .then(result => {
   const user = result.user;
   console.log(user);
-toast.success("Logged in Successfully")
+  Swal.fire({
+    position: "middle",
+    icon: "success",
+    title: "Logged in Successfully",
+    showConfirmButton: false,
+    timer: 1500
+  });
 navigate(location?.state ? location.state : '/');
 })
 .catch(error => {
@@ -70,9 +91,9 @@ navigate(location?.state ? location.state : '/');
     return (
       
         <div   >
-            {/* <Helmet> */}
+            <Helmet>
                 <title>Login</title>
-            {/* </Helmet> */}
+            </Helmet>
         <NavBar></NavBar>
         <h2 className="text-5xl font-bold my-5 text-center">Please login!</h2>
 

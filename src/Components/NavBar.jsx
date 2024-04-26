@@ -18,7 +18,7 @@ console.log(error);
   }
     const links = <>   
      <li><NavLink  to='/'>Home</NavLink></li>
-     <li><NavLink to='/alltourists'>All Tourists Spot</NavLink></li>
+     {/* <li><NavLink to='/alltourists'>All Tourists Spot</NavLink></li> */}
      <li><NavLink to='/addtourists'>Add Tourists Spot</NavLink></li>
      <li><NavLink to='/register'>Register</NavLink></li>
      <li><NavLink to='/login'>Login</NavLink></li>

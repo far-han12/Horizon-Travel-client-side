@@ -8,6 +8,7 @@ import {
     createBrowserRouter,
   } from "react-router-dom";
 import ErrorPage from '../Pages/ErrorPage';
+import Addtourist from '../Pages/Addtourist';
 
   const routes = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ import ErrorPage from '../Pages/ErrorPage';
         {
           path:"/register",
           element:<Register></Register>,
+        },
+        {
+          path:"/addtourists",
+          element:<Addtourist></Addtourist>,
         },
         {
           path:"/login",

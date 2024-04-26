@@ -3,10 +3,11 @@ import NavBar from '../Components/NavBar';
 import { useContext, useState } from "react";
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import {  toast } from 'react-toastify';
+import   toast  from 'react-hot-toast';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet-async";
 import Footer from "../Components/Footer";
+import Swal from "sweetalert2";
 // import 'animate.css';
 const Register = () => {
   const {createUser,updateUser} = useContext(AuthContext)
@@ -45,7 +46,13 @@ const handleRegister = (e) => {
 updateUser(name,photo)
 .then(() => {
 })
-    toast.success("Registered Successfully")
+Swal.fire({
+  position: "middle",
+  icon: "success",
+  title: "Registered Successfully",
+  showConfirmButton: false,
+  timer: 1500
+});
     
     })
     e.currentTarget.reset()
