@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-<footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800">
+<footer className="px-4 divide-y bg-cyan-100 dark:bg-gray-100 dark:text-gray-800">
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 		<div className="lg:w-1/3">
 			<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
@@ -44,7 +44,7 @@ const Footer = () => {
 						<a rel="noopener noreferrer" href="#">Guides</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="#">Contact Us</a>
+						<Link to='/contactus'>Contact Us</Link>
 					</li>
 				</ul>
 			</div>
