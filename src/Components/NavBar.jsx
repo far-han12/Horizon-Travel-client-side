@@ -17,12 +17,30 @@ console.log(error);
     });
   }
     const links = <>   
-     <li><NavLink  to='/'>Home</NavLink></li>
-     {/* <li><NavLink to='/alltourists'>All Tourists Spot</NavLink></li> */}
-     <li><NavLink to='/addtourists'>Add Tourists Spot</NavLink></li>
-     <li><NavLink to='/register'>Register</NavLink></li>
-     <li><NavLink to='/login'>Login</NavLink></li>
-    
+     <li><NavLink  to='/'  className={({isActive}) => {
+           return isActive ? 'text-white border bg-cyan-600 hover:bg-cyan-800 rounded-lg p-2' : 'font-normal'
+         }}>Home</NavLink></li>
+     <li><NavLink to='/alltourists' className={({isActive}) => {
+           return isActive ? 'text-white border bg-cyan-600 hover:bg-cyan-800 rounded-lg p-2' : 'font-normal'
+         }}>All Tourists Spot</NavLink></li>
+     <li><NavLink to='/addtourists' className={({isActive}) => {
+           return isActive ? 'text-white border bg-cyan-600 hover:bg-cyan-800 rounded-lg p-2' : 'font-normal'
+         }}>Add Tourists Spot</NavLink></li>
+     <li><NavLink to='/mylist' className={({isActive}) => {
+           return isActive ? 'text-white border bg-cyan-600 hover:bg-cyan-800 rounded-lg p-2' : 'font-normal'
+         }}>My List</NavLink></li>
+{
+  user ? "":     <li><NavLink to='/register' className={({isActive}) => {
+    return isActive ? 'text-white border bg-cyan-600 hover:bg-cyan-800 rounded-lg p-2' : 'font-normal'
+  }}>Register</NavLink></li>
+}
+{
+  user?"":
+  <li><NavLink to='/login' className={({isActive}) => {
+        return isActive ? 'text-white border bg-cyan-600 hover:bg-cyan-800 rounded-lg p-2' : 'font-normal'
+      }}>Login</NavLink></li>
+ 
+}
     
     </>
 
@@ -48,7 +66,7 @@ console.log(error);
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu active menu-horizontal px-1">
+          <ul className="menu active menu-horizontal space-x-1 px-1">
             {links}
           
        
