@@ -77,7 +77,7 @@ console.log(error);
           user ? <>
           <div tabIndex={0} role="button" className=" btn-circle avatar tooltip tooltip-left flex items-center"  data-tip={user.displayName || 'user name not found'}>
         <div className=" rounded-full  h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 border ">
-       <Link to='/updateprofile'>   <img alt=""  src={user?.photoURL} /></Link>
+         <img alt=""  src={user?.photoURL} />
         </div>
       </div>
       <Link  onClick={handlelogout} to='/' className="btn bg-cyan-400  hover:bg-cyan-400">LogOut</Link>

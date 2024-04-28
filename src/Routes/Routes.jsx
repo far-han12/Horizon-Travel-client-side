@@ -11,6 +11,7 @@ import ErrorPage from '../Pages/ErrorPage';
 import Addtourist from '../Pages/Addtourist';
 import PrivateRoute from './PrivateRoute';
 import Alltourists from '../Pages/Alltourists';
+import MyList from '../Pages/MyList';
 
   const routes = createBrowserRouter([
     {
@@ -38,6 +39,11 @@ import Alltourists from '../Pages/Alltourists';
           path:"/alltourists",
           element:<Alltourists></Alltourists>,
           loader: () => fetch("http://localhost:5000/tourist")
+        },
+        {
+          path:"/mylist",
+          element:<PrivateRoute><MyList></MyList></PrivateRoute>
+          // loader: () =>  fetch("http://localhost:5000/mylist")
         },
         {
           path:"/contactus",

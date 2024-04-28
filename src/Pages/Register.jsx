@@ -13,7 +13,7 @@ const Register = () => {
   const {createUser,updateUser} = useContext(AuthContext)
   const [registerError ,setregistererror]=useState('')
   const [showPassword,setShowPassword]=useState(false)
-
+const navigate = useNavigate()
 const handleRegister = (e) => {
   e.preventDefault();
   const form = new FormData(e.currentTarget);
@@ -56,16 +56,16 @@ Swal.fire({
     
     })
     e.currentTarget.reset()
-    
+    navigate('/register')
 
     .catch((error) => {
    toast.error(error.message);
    setregistererror(error.message)
     });
   
+  
 
   }
-
 
     return (
 
