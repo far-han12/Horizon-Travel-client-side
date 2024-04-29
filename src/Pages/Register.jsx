@@ -43,8 +43,10 @@ const handleRegister = (e) => {
   setregistererror('')
   createUser(email,password)
   .then((userCredential) => {
+   
 updateUser(name,photo)
 .then(() => {
+navigate('/')
 })
 Swal.fire({
   position: "middle",
@@ -56,12 +58,12 @@ Swal.fire({
     
     })
     e.currentTarget.reset()
-    navigate('/register')
 
     .catch((error) => {
    toast.error(error.message);
    setregistererror(error.message)
     });
+  
   
   
 

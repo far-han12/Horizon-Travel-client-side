@@ -12,6 +12,7 @@ import Addtourist from '../Pages/Addtourist';
 import PrivateRoute from './PrivateRoute';
 import Alltourists from '../Pages/Alltourists';
 import MyList from '../Pages/MyList';
+import Update from '../Pages/Update';
 
   const routes = createBrowserRouter([
     {
@@ -49,6 +50,12 @@ import MyList from '../Pages/MyList';
           path:"/contactus",
           element:<ContactUs></ContactUs>,
         },
+        {
+          path:"/update/:id",
+          element:<Update></Update>,
+          loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
+          },
+       
       ]
       
     },
