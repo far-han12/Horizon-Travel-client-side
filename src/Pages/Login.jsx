@@ -44,6 +44,7 @@ const Login = () => {
     navigate(location?.state ? location.state : '/login');
  
       })
+      e.currentTarget.reset()
       .catch((error) => {
         toast.error('Wrong Password or email');
         setregistererror(error.message)
@@ -79,7 +80,7 @@ githubLogin()
     showConfirmButton: false,
     timer: 1500
   });
-navigate(location?.state ? location.state : '/');
+navigate(location?.state ? location.state : '/login');
 })
 .catch(error => {
   toast.error('Wrong Password or email');
