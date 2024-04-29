@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 
 import {  Navigation, Autoplay} from 'swiper/modules';
 import { Link } from 'react-router-dom';
+import { Typewriter } from 'react-simple-typewriter'
 // import './Banner.css'
 const Banner = () => {
     return (
@@ -30,9 +31,20 @@ const Banner = () => {
            <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
            <div className="hero-content text-center text-neutral-content">
              <div  className="w-full">
-               <h1 data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay='500' className="mb-5 a text-base text-[#ffffff] lg:text-5xl font-extrabold w-full ">Discover Your Next Adventure</h1>
-               <p data-aos="fade-left" data-aos-easing="linear" data-aos-delay='1000' data-aos-duration="1500" className="mb-5 sm:text-xs text-[#fafafa] lg:text-sm">Let's embark on a virtual tour through Horizontal Travel's online realm, where every click brings you closer to the adventure of your dreams.  </p>
-          
+               <h1 data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay='500' className="mb-5 a text-base text-[#ffffff] lg:text-4xl font-extrabold w-full ">Discover Your Next Adventure with <br /> Horizon Travel</h1>
+               {/* <p data-aos="fade-left" data-aos-easing="linear" data-aos-delay='1000' data-aos-duration="1500" className="mb-5 sm:text-xs text-[#fafafa] lg:text-sm">Let's embark on a virtual tour through Horizontal Travel's online realm, where every click brings you closer to the adventure of your dreams.  </p> */}
+               <div className='font-bold'>
+                       <Typewriter 
+                                        words={['Bandarban']}
+                                        loop={true}
+                                        cursor={true}
+                                        cursorStyle='_'
+                                        typeSpeed={80}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+                                    />
+
+</div>
              </div>
            </div>
          </div>
@@ -42,8 +54,20 @@ const Banner = () => {
            <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
            <div className="hero-content text-center text-neutral-content">
        <div className='w-full'>
-       <h1 d className="mb-5 text-base animate__animated animate__pulse animate__infinite	 text-[#ffffff] lg:text-5xl font-extrabold w-full  ">Legian Beach</h1>
-               <p className="mb-5  animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">A paradise for travelers seeking diverse experiences, from cultural immersion to beachfront relaxation</p>
+       {/* <h1 d className="mb-5 text-base animate__animated animate__pulse animate__infinite	 text-[#ffffff] lg:text-5xl font-extrabold w-full  ">Discover Your Next Adventure with Horizon Travel</h1> */}
+             <div className='font-bold text-3xl'>
+             <Typewriter
+                                        words={['Legian Beach']}
+                                        loop={true}
+                                        cursor={true}
+                                        cursorStyle='_'
+                                        typeSpeed={80}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+                                    />
+             </div>
+               
+
        </div>
            </div>
          </div>
@@ -53,18 +77,41 @@ const Banner = () => {
            <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
            <div className="hero-content text-center text-neutral-content">
        <div className='w-full'>
-       <h1  className="mb-5 text-base animate__animated animate__pulse animate__infinite text-[#ffffff] lg:text-5xl font-extrabold w-full  ">Hạ Long Bay</h1>
-               <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">
-Hạ Long Bay, located in northeastern Vietnam, is renowned for its emerald waters </p>
+       {/* <h1  className="mb-5 text-base animate__animated animate__pulse animate__infinite text-[#ffffff] lg:text-5xl font-extrabold w-full  "></h1> */}
+               {/* <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">
+Hạ Long Bay, located in northeastern Vietnam, is renowned for its emerald waters </p> */}
+<div className='font-bold text-3xl'>
+<Typewriter
+                                        words={['Hạ Long Bay']}
+                                        loop={true}
+                                        cursor={true}
+                                        cursorStyle='_'
+                                        typeSpeed={80}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+                                    />
+</div>
        </div>
            </div>
-         </div></SwiperSlide>
+         </div>
+         </SwiperSlide>
         <SwiperSlide>   <div className="hero w-full h-[300px] lg:h-[600px]  bg-cover bg-center " style={{ backgroundImage: 'url(https://i.ibb.co/NNk7VWs/big-entrance-gate-bali-indonesia.jpg)'}}>
            <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
            <div className="hero-content text-center text-neutral-content">
        <div className='w-full'>
-       <h1  className="mb-5 animate__animated animate__pulse animate__infinite text-base text-[#ffffff] lg:text-5xl font-extrabold w-full  ">Balinese Temple</h1>
-               <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">Renowned for their stunning architecture, characterized by intricate carvings, towering pagodas, and colorful ornamentation.</p>
+       {/* <h1  className="mb-5 animate__animated animate__pulse animate__infinite text-base text-[#ffffff] lg:text-5xl font-extrabold w-full  "></h1> */}
+               {/* <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">Renowned for their stunning architecture, characterized by intricate carvings, towering pagodas, and colorful ornamentation.</p> */}
+               <div className='font-bold text-3xl'>
+               <Typewriter
+                                        words={['Balinese Temple']}
+                                        loop={true}
+                                        cursor={true}
+                                        cursorStyle='_'
+                                        typeSpeed={80}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+                                    />
+               </div>
        </div>
            </div>
          </div></SwiperSlide>

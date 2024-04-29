@@ -46,7 +46,7 @@ console.log(error);
     </>
 
     return (
-        <div className="navbar bg-base-100 ">
+        <div className="navbar bg-base-100  ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden" onClick={()=>{setopen(!open)}}>
@@ -97,7 +97,7 @@ console.log(error);
   
 >
 
-        <div className=" rounded-full   avatar  flex items-center h-8  w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 border ">
+        <div className=" rounded-full   avatar  flex items-center h-8  w-8 md:h-10 md:w-10 lg:h-11 lg:w-11 border ">
          <img alt="" className='rounded-full' src={user?.photoURL} />
         </div>
         <Tooltip id="my-tooltip" />
