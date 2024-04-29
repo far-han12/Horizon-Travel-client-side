@@ -13,6 +13,7 @@ import PrivateRoute from './PrivateRoute';
 import Alltourists from '../Pages/Alltourists';
 import MyList from '../Pages/MyList';
 import Update from '../Pages/Update';
+import ViewDetails from '../Components/ViewDetails';
 
   const routes = createBrowserRouter([
     {
@@ -53,6 +54,11 @@ import Update from '../Pages/Update';
         {
           path:"/update/:id",
           element:<Update></Update>,
+          loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
+          },
+        {
+          path:"/viewdetails/:id",
+          element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
           },
        

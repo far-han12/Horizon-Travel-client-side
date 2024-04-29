@@ -111,7 +111,7 @@ e.currentTarget.reset()
         <label  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">User Name</label>
     </div>
   </div>
-  <button type="submit"  className="text-white focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-cyan-400 hover:bg-cyan-500 dark:focus:ring-cyan-800">Add</button>
+  <button type="submit"  className="text-black focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-cyan-400 hover:bg-cyan-500 dark:focus:ring-cyan-800">Add</button>
 </form>
 <Footer></Footer>
 </div>

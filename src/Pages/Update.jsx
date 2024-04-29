@@ -99,7 +99,7 @@ e.currentTarget.reset()
     </div>
   </div>
   
-  <button type="submit"  className="text-white focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-cyan-400 hover:bg-cyan-500 dark:focus:ring-cyan-800">Add</button>
+  <button type="submit"  className="text-black focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-cyan-400 hover:bg-cyan-500 dark:focus:ring-cyan-800">Update</button>
 </form>
 <Footer></Footer>
 </div>
