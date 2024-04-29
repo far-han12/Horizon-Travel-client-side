@@ -41,7 +41,7 @@ const Login = () => {
         timer: 1500
       });
 
-    navigate(location?.state ? location.state : '/login');
+    navigate(location?.state ? location.state : '/');
  
       })
       e.currentTarget.reset()
