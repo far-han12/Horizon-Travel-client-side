@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
     return (
-        <div className='mx-auto font-manrope'>
+        <div className='mx-auto font-serif'>
             <Outlet></Outlet>
         </div>
     );

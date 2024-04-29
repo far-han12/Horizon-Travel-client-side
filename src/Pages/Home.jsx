@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet-async';
 import Location from '../Components/Location/Location';
 import TouristSpot from '../Components/TouristSpot';
 import Clientreview from '../Components/Clientreview';
+import SpecialOffers from '../Components/SpecialOffers';
 
 const Home = () => {
     return (
@@ -28,6 +29,9 @@ const Home = () => {
                 <h2 className='text-center font-bold text-3xl'>Client Reviews</h2>
                 <p className='text-center font-normal text-xl mt-5 mb-10'>Discover why our clients rave about our service and products in their own words.</p>
                 <Clientreview></Clientreview>
+            </div>
+            <div>
+                <SpecialOffers></SpecialOffers>
             </div>
             <Footer></Footer>
         </div>
