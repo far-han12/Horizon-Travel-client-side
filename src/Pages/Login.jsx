@@ -120,7 +120,7 @@ navigate(location?.state ? location.state : '/login');
             
           }
     <div className="form-control mt-5 ">
-      <button  className="btn bg-cyan-300 hover:bg-cyan-400"><BiSolidLogInCircle></BiSolidLogInCircle> Login</button>
+      <button  className="btn bg-cyan-300 text-black hover:bg-cyan-400"><BiSolidLogInCircle></BiSolidLogInCircle> Login</button>
     </div>
   
     <div className="divider text-sm">Or Sign In With</div>

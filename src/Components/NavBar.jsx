@@ -149,7 +149,7 @@ console.log(error);
         
       {/* </div> */}
       <Link  onClick={handlelogout} to='/' className="btn bg-cyan-400 text-black hover:bg-cyan-400">LogOut</Link>
-          </> : <Link to='/login' className="btn bg-cyan-300 hover:bg-cyan-400">Login</Link>
+          </> : <Link to='/login' className="btn bg-cyan-300 text-black hover:bg-cyan-400">Login</Link>
          
          } 
       
