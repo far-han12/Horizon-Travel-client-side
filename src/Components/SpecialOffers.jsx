@@ -13,7 +13,7 @@ const SpecialOffers = () => {
       <h1 className="mb-5 text-5xl font-bold font-serif">Save up to</h1>
       <h1 className="mb-5 text-5xl font-bold text-cyan-400 italic font-serif">50%</h1>
       <p className="mb-5 font-serif">Whether you're dreaming of visiting iconic landmarks, immersing yourself in diverse cultures, or enjoying natural wonders, there's a whole world out there waiting to be discovered.</p>
-      <Link to='/alltourists' className="btn border-0 bg-cyan-400">Explore Now</Link>
+      <Link to='/alltourists' className="btn border-0 text-black bg-cyan-400">Explore Now</Link>
     </div>
   </div>
 </div>

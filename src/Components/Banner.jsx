@@ -33,7 +33,7 @@ const Banner = () => {
              <div  className="w-full">
                <h1 data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay='500' className="mb-5 a text-base text-[#ffffff] lg:text-4xl font-extrabold w-full ">Discover Your Next Adventure with <br /> Horizon Travel</h1>
                {/* <p data-aos="fade-left" data-aos-easing="linear" data-aos-delay='1000' data-aos-duration="1500" className="mb-5 sm:text-xs text-[#fafafa] lg:text-sm">Let's embark on a virtual tour through Horizontal Travel's online realm, where every click brings you closer to the adventure of your dreams.  </p> */}
-               <div className='font-bold'>
+               <div className='font-bold text-white '>
                        <Typewriter 
                                         words={['Bandarban']}
                                         loop={true}
@@ -55,7 +55,7 @@ const Banner = () => {
            <div className="hero-content text-center text-neutral-content">
        <div className='w-full'>
        {/* <h1 d className="mb-5 text-base animate__animated animate__pulse animate__infinite	 text-[#ffffff] lg:text-5xl font-extrabold w-full  ">Discover Your Next Adventure with Horizon Travel</h1> */}
-             <div className='font-bold text-3xl'>
+             <div className='font-bold text-3xl text-white'>
              <Typewriter
                                         words={['Legian Beach']}
                                         loop={true}
@@ -80,7 +80,7 @@ const Banner = () => {
        {/* <h1  className="mb-5 text-base animate__animated animate__pulse animate__infinite text-[#ffffff] lg:text-5xl font-extrabold w-full  "></h1> */}
                {/* <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">
 Hạ Long Bay, located in northeastern Vietnam, is renowned for its emerald waters </p> */}
-<div className='font-bold text-3xl'>
+<div className='font-bold text-white text-3xl'>
 <Typewriter
                                         words={['Hạ Long Bay']}
                                         loop={true}
@@ -101,7 +101,7 @@ Hạ Long Bay, located in northeastern Vietnam, is renowned for its emerald wate
        <div className='w-full'>
        {/* <h1  className="mb-5 animate__animated animate__pulse animate__infinite text-base text-[#ffffff] lg:text-5xl font-extrabold w-full  "></h1> */}
                {/* <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">Renowned for their stunning architecture, characterized by intricate carvings, towering pagodas, and colorful ornamentation.</p> */}
-               <div className='font-bold text-3xl'>
+               <div className='font-bold text-white text-3xl'>
                <Typewriter
                                         words={['Balinese Temple']}
                                         loop={true}

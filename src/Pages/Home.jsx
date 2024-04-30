@@ -20,17 +20,17 @@ const Home = () => {
             <div className='mb-10'><Banner></Banner></div>
           
             <div className='my-10'>
-                <h2 className='text-center font-bold lg:text-3xl mb-10'>Tourists Spot</h2>
+                <h2 className='text-center font-bold dark:text-white lg:text-3xl mb-10'>Tourists Spot</h2>
                 <p className='text-center font-light text-xl mb-10'>Whether you're seeking a relaxing beach getaway, an adventurous jungle trek,  or a cultural immersion <br /> in bustling cities, we have the perfect itinerary for you.</p>
                 <TouristSpot></TouristSpot>
             </div>
             <div>
-                <h2 className='text-center font-bold lg:text-3xl'>Client Reviews</h2>
-                <p className='text-center font-normal text-xl mt-5 mb-10'>Discover why our clients rave about our service and products in their own words.</p>
+                <h2 className='text-center font-bold dark:text-white lg:text-3xl'>Client Reviews</h2>
+                <p className='text-center font-normal text-xl mt-5  mb-10'>Discover why our clients rave about our service and products in their own words.</p>
                 <Clientreview></Clientreview>
             </div>
             <div className=' my-10  '>
-                <h2 className='text-center mb-5 font-bold lg:text-3xl'>Southeast Asia</h2>
+                <h2 className='text-center mb-5 font-bold dark:text-white lg:text-3xl'>Southeast Asia</h2>
                 <p className='text-center mb-8 lg:text-xl'>Southeast Asia is a popular tourist destination, attracting millions of visitors each year</p>
                 <CountryCard></CountryCard>
             </div>

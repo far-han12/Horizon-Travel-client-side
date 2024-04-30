@@ -14,7 +14,7 @@ const TouristCard = ({s}) => {
     <p> Travel Time: {travel_time}</p>
     <p>Seasonality: {seasonality}</p>
     <div className="card-actions justify-end">
-      <Link to={`/viewdetails/${_id}`} className="btn bg-cyan-400 border-0 hover:bg-cyan-500">View Details</Link>
+      <Link to={`/viewdetails/${_id}`} className="btn bg-cyan-400 border-0 text-black hover:bg-cyan-500">View Details</Link>
     </div>
   </div>
 </div>

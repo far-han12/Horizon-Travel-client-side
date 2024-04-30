@@ -14,10 +14,10 @@ const Alltourists = () => {
 
             <div className='mb-5 flex justify-start md:justify-center md:items-center lg:justify-center lg:items-center'>
             <details className="dropdown dropdown-right">
-  <summary className="m-1 btn bg-cyan-200">Sort</summary>
+  <summary className="m-1 btn text-black bg-cyan-200">Sort</summary>
   <ul className="p-2  shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
+    <li><a>High Cost</a></li>
+    <li><a>Low Cost</a></li>
   </ul>
 </details>
             </div>

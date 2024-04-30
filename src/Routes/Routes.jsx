@@ -14,6 +14,7 @@ import Alltourists from '../Pages/Alltourists';
 import MyList from '../Pages/MyList';
 import Update from '../Pages/Update';
 import ViewDetails from '../Components/ViewDetails';
+import Spotlist from '../Pages/Spotlist';
 
   const routes = createBrowserRouter([
     {
@@ -61,6 +62,11 @@ import ViewDetails from '../Components/ViewDetails';
           element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
           },
+        // {
+        //   path:"/findcountry/:id",
+        //   element:<Spotlist></Spotlist>,
+        //   loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
+        //   },
        
       ]
       
