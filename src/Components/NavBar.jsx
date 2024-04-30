@@ -24,7 +24,9 @@ useEffect(() => {
 
   // add custom data-theme attribute
   document.querySelector('html').setAttribute('data-theme', localTheme)
+
 }, [theme])
+
   const handlelogout = ()=>{
     logout()
     .then(() => {

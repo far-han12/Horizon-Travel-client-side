@@ -5,13 +5,13 @@ const CountryCard = () => {
     const[items,setitem]=useState([])
  
     // const handleList = e =>{
-    //     fetch(`http://localhost:5000/findcountry/${country_Name}`)
+    //     fetch(`https://react-tourism-server.vercel.app/findcountry/${country_Name}`)
     //       .then(res => res.json())
     //       .then(data => console.log(data))
     // }
 
     useEffect(() => {
-        fetch("http://localhost:5000/country")
+        fetch("https://react-tourism-server.vercel.app/country")
           .then(res => res.json())
           .then(data=> setitem(data))
       },[])

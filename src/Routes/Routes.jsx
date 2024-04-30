@@ -41,12 +41,12 @@ import Spotlist from '../Pages/Spotlist';
         {
           path:"/alltourists",
           element:<Alltourists></Alltourists>,
-          loader: () => fetch("http://localhost:5000/tourist")
+          loader: () => fetch("https://react-tourism-server.vercel.app/tourist")
         },
         {
           path:"/mylist",
           element:<PrivateRoute><MyList></MyList></PrivateRoute>
-          // loader: () =>  fetch("http://localhost:5000/mylist")
+          // loader: () =>  fetch("https://react-tourism-server.vercel.app/mylist")
         },
         {
           path:"/contactus",
@@ -55,17 +55,17 @@ import Spotlist from '../Pages/Spotlist';
         {
           path:"/update/:id",
           element:<Update></Update>,
-          loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
+          loader: ({params}) => fetch(`https://react-tourism-server.vercel.app/tourist/${params.id}`)
           },
         {
           path:"/viewdetails/:id",
           element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
+          loader: ({params}) => fetch(`https://react-tourism-server.vercel.app/tourist/${params.id}`)
           },
         // {
         //   path:"/findcountry/:id",
         //   element:<Spotlist></Spotlist>,
-        //   loader: ({params}) => fetch(`http://localhost:5000/tourist/${params.id}`)
+        //   loader: ({params}) => fetch(`https://react-tourism-server.vercel.app/tourist/${params.id}`)
         //   },
        
       ]
