@@ -9,7 +9,9 @@ import TouristSpot from '../Components/TouristSpot';
 import Clientreview from '../Components/Clientreview';
 import SpecialOffers from '../Components/SpecialOffers';
 import CountryCard from '../Components/CountryCard';
-
+import Travelai from '../Components/Travelai';
+import { Link } from 'react-router-dom';
+import { FaRobot } from "react-icons/fa";
 const Home = () => {
     return (
         <div>
@@ -36,6 +38,9 @@ const Home = () => {
             </div>
             <div>
                 <SpecialOffers></SpecialOffers>
+            </div>
+            <div className='my-10 '>
+                <Link className="btn btn-wide mx-auto flex justify-center bg-cyan-400 hover:bg-cyan-600 " to='/travelai'>Explore Our Travel AI <FaRobot></FaRobot> </Link>
             </div>
             <Footer></Footer>
         </div>

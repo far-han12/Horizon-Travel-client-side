@@ -78,7 +78,7 @@ Swal.fire({
                       <td>{s.tourists_spot_name}</td>
                       <td className=''>{s.location}</td>
                       <td>{s.country_Name}</td>
-                      <td>{s.cost}</td>
+                      <td>$ {s.cost}</td>
                       <td>{s.travel_time}</td>
                       <td>
                           <Link to={`/update/${s._id}`}

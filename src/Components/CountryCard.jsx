@@ -19,7 +19,7 @@ const CountryCard = () => {
 
     return (
         <div className=' mx-auto '>
-       <div className='grid gap-4 lg:grid-cols-3'>
+       <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
        {
             items.map((s,p)=>    <div  key={p} className="card mx-auto card-compact w-96 bg-base-100 shadow-xl">
             <figure><img className='w-[400px] h-80' src={s.photo} alt="Shoes" /></figure>

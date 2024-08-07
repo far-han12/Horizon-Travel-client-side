@@ -15,6 +15,7 @@ import MyList from '../Pages/MyList';
 import Update from '../Pages/Update';
 import ViewDetails from '../Components/ViewDetails';
 import Spotlist from '../Pages/Spotlist';
+import Travelai from '../Components/Travelai';
 
   const routes = createBrowserRouter([
     {
@@ -51,6 +52,10 @@ import Spotlist from '../Pages/Spotlist';
         {
           path:"/contactus",
           element:<ContactUs></ContactUs>,
+        },
+        {
+          path:"/travelai",
+          element:<Travelai></Travelai>,
         },
         {
           path:"/update/:id",

@@ -10,7 +10,7 @@ const TouristCard = ({s}) => {
   <div className="card-body">
     <h1 className="card-title mb-2">{tourists_spot_name}</h1>
     <p>Total Visitors Per Year : {visitors}</p>
-    <p> Average Cost :{cost}</p>
+    <p> Average Cost :{cost} $</p>
     <p> Travel Time: {travel_time}</p>
     <p>Seasonality: {seasonality}</p>
     <div className="card-actions justify-end">

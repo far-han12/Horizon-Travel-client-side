@@ -9,24 +9,20 @@ import { Tooltip } from 'react-tooltip';
 const NavBar = () => {
 const {user,logout} = useContext(AuthContext)
 const [open,setopen]=useState(false)
-const [theme, setTheme] = useState('light')
-const handleToggle = e => {
-  if (e.target.checked) {
-    setTheme('dark')
-  } else {
-    setTheme('light')
-  }
-}
+const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
+
 
 useEffect(() => {
-  localStorage.setItem('theme', theme)
-  const localTheme = localStorage.getItem('theme')
-
-  // add custom data-theme attribute
-  document.querySelector('html').setAttribute('data-theme', localTheme)
-
-}, [theme])
-
+  localStorage.setItem('theme', theme);
+  document.querySelector('html').setAttribute('data-theme', theme);
+}, [theme]);
+const handleToggle = e => {
+  if (e.target.checked) {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+};
   const handlelogout = ()=>{
     logout()
     .then(() => {
@@ -95,11 +91,12 @@ console.log(error);
         </div>
         <div className="navbar-end">
         <label className='cursor-pointer mr-2 grid place-items-center'>
-          <input
-            type='checkbox'
-            onChange={handleToggle}
-            className='toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2'
-          />
+        <input
+  type='checkbox'
+  onChange={handleToggle}
+  className='toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2'
+  checked={theme === 'dark'}
+/>
           <svg
             className='col-start-1 row-start-1 stroke-base-100 fill-base-100'
             xmlns='http://www.w3.org/2000/svg'
