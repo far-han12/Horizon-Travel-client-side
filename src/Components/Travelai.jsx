@@ -1,7 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import ReactMarkdown from "react-markdown";
-
+import NavBar from './NavBar';
+import Footer from './Footer';
+import { MdOutlineCardTravel } from "react-icons/md";
 const Travelai = () => {
     const [question, setQuestion] = useState("");
     const [answer, setAnswer] = useState("");
@@ -34,12 +36,21 @@ const Travelai = () => {
     };
     return (
        
-       <div className=' mx-auto lg:px-20 '>
+      <div>
+        <NavBar></NavBar>
+      
+
+         <div className='my-8 mx-auto md:px-10  lg:px-14 '>
+      <div>
+            
+      <h1 className='font-semibold text-3xl text-center'>Discover the Future of Travel with Travel AI Powered by Gemini</h1>
+<h2 className='font-medium text-2xl text-center mt-5'>Plan Your Perfect Trip with Intelligent Recommendations and Insights</h2>
+      </div>
         <form
       onSubmit={generateAnswer}
       className="w-full  mx-auto  text-center rounded-lg shadow-lg bg-white py-6 px-4 transition-all duration-500 transform hover:scale-105"
     >
-        <h1 className="text-4xl font-bold text-blue-500 mb-4 animate-bounce">Travel AI</h1>
+        <h1 className="text-4xl flex justify-center mt-5  font-bold text-blue-500 mb-4 animate-bounce">Travel AI <MdOutlineCardTravel></MdOutlineCardTravel></h1>
    
       <textarea
         required
@@ -62,6 +73,7 @@ const Travelai = () => {
       <ReactMarkdown className="p-4">{answer}</ReactMarkdown>
     </div>
         </div>
+      </div>
     );
 };
 

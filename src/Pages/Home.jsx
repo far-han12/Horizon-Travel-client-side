@@ -40,7 +40,8 @@ const Home = () => {
                 <SpecialOffers></SpecialOffers>
             </div>
             <div className='my-10 '>
-                <Link className="btn btn-wide mx-auto flex justify-center bg-cyan-400 hover:bg-cyan-600 " to='/travelai'>Explore Our Travel AI <FaRobot></FaRobot> </Link>
+        
+                <Link className="btn btn-wide  mx-auto flex justify-center text-black dark:text-white bg-cyan-400 hover:bg-cyan-500 focus:shadow-lg  transition-transform transform hover:scale-110 active:scale-95 duration-300" to='/travelai'>Explore Our Travel AI <FaRobot></FaRobot> </Link>
             </div>
             <Footer></Footer>
         </div>
