@@ -18,7 +18,7 @@ const Alltourists = () => {
         if (minPrice) query += `minPrice=${minPrice}&`;
         if (maxPrice) query += `maxPrice=${maxPrice}&`;
     
-        axios.get(`http://localhost:5000/tourist?${query}`)
+        axios.get(`https://react-tourism-server.vercel.app/tourist?${query}`)
           .then(response =>
             {
              setSpots(response.data)})

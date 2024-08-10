@@ -15,8 +15,7 @@ const CountryCard = () => {
           .then(res => res.json())
           .then(data=> setitem(data))
       },[])
-   
-
+      
     return (
         <div className=' mx-auto '>
        <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
