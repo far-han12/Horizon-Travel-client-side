@@ -12,6 +12,7 @@ const Travelai = () => {
     const generateAnswer = async (e) => {
       setGeneratingAnswer(true);
       e.preventDefault();
+
       setAnswer("Loading your answer... \n It might take up to 10 seconds");
       try {
         const response = await axios({
@@ -23,15 +24,16 @@ const Travelai = () => {
             contents: [{ parts: [{ text: question }] }],
           },
         });
-  
+        
         setAnswer(
           response.data.candidates[0].content.parts[0].text
         );
+        setQuestion("")
       } catch (error) {
         console.log(error);
         setAnswer("Sorry - Something went wrong. Please try again!");
       }
-  
+     
       setGeneratingAnswer(false);
     };
     return (
