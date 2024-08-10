@@ -1,126 +1,105 @@
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-// import 'animate.css';
 
-import {  Navigation, Autoplay} from 'swiper/modules';
-import { Link } from 'react-router-dom';
-import { Typewriter } from 'react-simple-typewriter'
-// import './Banner.css'
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'animate.css';
+
+
+import { Autoplay} from 'swiper/modules';
+
+import 'swiper/css/effect-fade';
+
+
+// import required modules
+
 const Banner = () => {
     return (
-        <div >
-     <Swiper
-       slidesPerView={1}
-       spaceBetween={30}
-       loop={true}
-       centeredSlides={true}
-       autoplay={{
-         delay: 2500,
-         disableOnInteraction: false,
-       }}
-   
-    //    navigation={true}
-       modules={[ Autoplay]}
-       className="mySwiper"
-      >
-         
-            <SwiperSlide>
-               
-               <div  className="hero  h-[300px] lg:h-[600px]  bg-cover bg-center " style={{ backgroundImage: 'url(https://i.ibb.co/bWz8VKz/small-house-built-peaceful-green-hill-high-up-mountains.jpg)'}}>
-           <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
-           <div className="hero-content text-center text-neutral-content">
-             <div  className="w-full">
-               <h1 data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay='500' className="mb-5 a text-base text-[#ffffff] lg:text-4xl font-extrabold w-full ">Discover Your Next Adventure with <br /> Horizon Travel</h1>
-               {/* <p data-aos="fade-left" data-aos-easing="linear" data-aos-delay='1000' data-aos-duration="1500" className="mb-5 sm:text-xs text-[#fafafa] lg:text-sm">Let's embark on a virtual tour through Horizontal Travel's online realm, where every click brings you closer to the adventure of your dreams.  </p> */}
-               <div className='font-bold text-white '>
-                       <Typewriter 
-                                        words={['Bandarban']}
-                                        loop={true}
-                                        cursor={true}
-                                        cursorStyle='_'
-                                        typeSpeed={80}
-                                        deleteSpeed={50}
-                                        delaySpeed={1000}
-                                    />
+        <div className='font-sedan relative'>
+           <div className='absolute inset-0 flex mt-4 flex-col justify-center items-center text-center text-white z-10 top-[50%]'>
+                <div className='text-center'>
+                    <div className='text-lg md:text-2xl lg:text-4xl mb-2 font-bold'>
+                        <p>Discover Your Next Adventure with </p>
+                        <hr className='border-t-2 border-premium mt-1 md:mt-2 lg:mt-3 mb-1 lg:mb-2' />
+                        <p className=' animate__animated  animate__infinite animate__jackInTheBox'>Horizon Travel</p>
+                    </div>
+                </div>
+            </div>
+            <Swiper
+                spaceBetween={0}
+                centeredSlides={true}
+                loop={true}
+                effect={'fade'}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
 
-</div>
-             </div>
-           </div>
-         </div>
-                 
-               </SwiperSlide>
-        <SwiperSlide>    <div className="hero w-full h-[300px] lg:h-[600px]  bg-cover bg-center " style={{ backgroundImage: 'url(https://i.ibb.co/8KDVwXr/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg)'}}>
-           <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
-           <div className="hero-content text-center text-neutral-content">
-       <div className='w-full'>
-       {/* <h1 d className="mb-5 text-base animate__animated animate__pulse animate__infinite	 text-[#ffffff] lg:text-5xl font-extrabold w-full  ">Discover Your Next Adventure with Horizon Travel</h1> */}
-             <div className='font-bold text-3xl text-white'>
-             <Typewriter
-                                        words={['Legian Beach']}
-                                        loop={true}
-                                        cursor={true}
-                                        cursorStyle='_'
-                                        typeSpeed={80}
-                                        deleteSpeed={50}
-                                        delaySpeed={1000}
-                                    />
-             </div>
-               
+                className="mySwiper"
+            >
 
-       </div>
-           </div>
-         </div>
-      
-         </SwiperSlide>
-        <SwiperSlide ><div className="hero w-full h-[300px] lg:h-[600px]  bg-cover bg-center " style={{ backgroundImage: 'url(https://i.ibb.co/MM8rMqC/pexels-rachel-claire-7276804.jpg)'}}>
-           <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
-           <div className="hero-content text-center text-neutral-content">
-       <div className='w-full'>
-       {/* <h1  className="mb-5 text-base animate__animated animate__pulse animate__infinite text-[#ffffff] lg:text-5xl font-extrabold w-full  "></h1> */}
-               {/* <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">
-Hạ Long Bay, located in northeastern Vietnam, is renowned for its emerald waters </p> */}
-<div className='font-bold text-white text-3xl'>
-<Typewriter
-                                        words={['Hạ Long Bay']}
-                                        loop={true}
-                                        cursor={true}
-                                        cursorStyle='_'
-                                        typeSpeed={80}
-                                        deleteSpeed={50}
-                                        delaySpeed={1000}
-                                    />
-</div>
-       </div>
-           </div>
-         </div>
-         </SwiperSlide>
-        <SwiperSlide>   <div className="hero w-full h-[300px] lg:h-[600px]  bg-cover bg-center " style={{ backgroundImage: 'url(https://i.ibb.co/NNk7VWs/big-entrance-gate-bali-indonesia.jpg)'}}>
-           <div className="hero-overlay bg-opacity-10 bg-center bg-cover "></div>
-           <div className="hero-content text-center text-neutral-content">
-       <div className='w-full'>
-       {/* <h1  className="mb-5 animate__animated animate__pulse animate__infinite text-base text-[#ffffff] lg:text-5xl font-extrabold w-full  "></h1> */}
-               {/* <p className="mb-5 animate__animated animate__pulse animate__infinite sm:text-xs text-[#ffffff] lg:text-sm">Renowned for their stunning architecture, characterized by intricate carvings, towering pagodas, and colorful ornamentation.</p> */}
-               <div className='font-bold text-white text-3xl'>
-               <Typewriter
-                                        words={['Balinese Temple']}
-                                        loop={true}
-                                        cursor={true}
-                                        cursorStyle='_'
-                                        typeSpeed={80}
-                                        deleteSpeed={50}
-                                        delaySpeed={1000}
-                                    />
-               </div>
-       </div>
-           </div>
-         </div></SwiperSlide>
-   
-
-      </Swiper>     
-    
-      
-         </div>
+                <SwiperSlide>
+                    <div className='relative bg-[url(https://i.ibb.co/bWz8VKz/small-house-built-peaceful-green-hill-high-up-mountains.jpg)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                        <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
+                        <div className='text-center text-white z-10'>
+                            <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Explore the World with Ease</h1>
+                            {/* <h1 className='mt-2 md:mt-3 lg:mt-6 text-xl md:text-2xl lg:text-4xl font-bold'>
+                                Library Hour <br /> <hr className='border-t-2 border-premium mt-1 md:mt-2 lg:mt-3 mb-1 lg:mb-2' />
+                                <span className='text-xl md:text-2xl lg:text-5xl'>8:00 AM - 6:00 PM</span>
+                            </h1> */}
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='relative bg-[url(https://i.ibb.co/8KDVwXr/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                        <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
+                        <div className='text-center text-white z-10'>
+                            <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Journey Beyond Boundaries</h1>
+                            {/* <h1 className='mt-2 md:mt-3 lg:mt-6 text-xl md:text-2xl lg:text-4xl font-bold'>
+                                Library Hour <br /> <hr className='border-t-2 border-premium mt-1 md:mt-2 lg:mt-3 mb-1 lg:mb-2' />
+                                <span className='text-xl md:text-2xl lg:text-5xl'>8:00 AM - 6:00 PM</span>
+                            </h1> */}
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='relative bg-[url(https://i.ibb.co/MM8rMqC/pexels-rachel-claire-7276804.jpg)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                        <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
+                        <div className='text-center text-white z-10'>
+                            <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Hassle-Free Travel</h1>
+                            {/* <h1 className='mt-2 md:mt-3 lg:mt-6 text-xl md:text-2xl lg:text-4xl font-bold'>
+                                Library Hour <br /> <hr className='border-t-2 border-premium mt-1 md:mt-2 lg:mt-3 mb-1 lg:mb-2' />
+                                <span className='text-xl md:text-2xl lg:text-5xl'>8:00 AM - 6:00 PM</span>
+                            </h1> */}
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='relative bg-[url(https://i.ibb.co/NNk7VWs/big-entrance-gate-bali-indonesia.jpg)] bg-cover bg-top bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                        <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
+                        <div className='text-center text-white z-10'>
+                            <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Adventure Awaits You</h1>
+                            {/* <h1 className='mt-2 md:mt-3 lg:mt-6 text-xl md:text-2xl lg:text-4xl font-bold'>
+                                Library Hour <br /> <hr className='border-t-2 border-premium mt-1 md:mt-2 lg:mt-3 mb-1 lg:mb-2' />
+                                <span className='text-xl md:text-2xl lg:text-5xl'>8:00 AM - 6:00 PM</span>
+                            </h1> */}
+                        </div>
+                    </div>
+                </SwiperSlide>
+                {/* <SwiperSlide>
+                    <div className='relative hero  h-[300px] lg:h-[600px] bg-[url(https://i.postimg.cc/jSdPpRMY/banner-6.jpg)] bg-cover bg-center bg-no-repeat  md:h-[400px] w-full flex justify-center items-center'>
+                        <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
+                        <div className='text-center text-white z-10'>
+                            <h1 className='text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Wander, Explore, Repeat</h1>
+                       
+                        </div>
+                    </div>
+                </SwiperSlide> */}
+            </Swiper>
+           
+        </div>
     );
 };
 
