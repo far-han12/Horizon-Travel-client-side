@@ -45,8 +45,8 @@ const Travelai = () => {
          <div className='my-8 mx-auto md:px-10  lg:px-14 '>
       <div>
             
-      <h1 className='font-semibold text-3xl text-center'>Discover the Future of Travel with Travel AI Powered by Gemini</h1>
-<h2 className='font-medium text-2xl text-center mt-5'>Plan Your Perfect Trip with Intelligent Recommendations and Insights</h2>
+      <h1 className='font-semibold text-2xl lg:text-3xl text-center'>Discover the Future of Travel with Travel AI Powered by Gemini</h1>
+<h2 className='font-medium text-xl lg:text-2xl text-center mt-5 mb-3 lg:mb-5'>Plan Your Perfect Trip with Intelligent Recommendations and Insights</h2>
       </div>
         <form
       onSubmit={generateAnswer}
