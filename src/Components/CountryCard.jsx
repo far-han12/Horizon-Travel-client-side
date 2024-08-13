@@ -1,9 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const CountryCard = () => {
-    const[items,setitem]=useState([])
- 
+  const [items, setItems] = useState([]);
+
+  const responsive = {
+      superLargeDesktop: {
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+      },
+      desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+      },
+      tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+      },
+      mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+      }
+  };
     // const handleList = e =>{
     //     fetch(`https://react-tourism-server.vercel.app/findcountry/${country_Name}`)
     //       .then(res => res.json())
@@ -13,16 +33,16 @@ const CountryCard = () => {
     useEffect(() => {
         fetch("https://react-tourism-server.vercel.app/country")
           .then(res => res.json())
-          .then(data=> setitem(data))
+          .then(data=> setItems(data))
       },[])
       
     return (
-        <div className=' mx-auto '>
-       <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
+        <div className=' mx-auto overflow-hidden p-4'>
+         <Carousel responsive={responsive} swipeable={true} draggable={true}  infinite={true} >
        {
-            items.map((s,p)=>    <div  key={p} className="card mx-auto card-compact w-[300px] md:w-[350px] lg:w-96 bg-base-100 shadow-xl">
+            items.map((s,p)=>    <div  key={p} className="card mx-auto card-compact  md:w-[350px] lg:w-96 h-[600px] bg-base-100 border-2">
             <figure><img className='w-[400px] h-80' src={s.photo} alt="Shoes" /></figure>
-            <div className="card-body">
+            <div className="card-body flex-wrap">
               <h2 className="card-title">{s.country_Name}</h2>
               <p>{s.description}</p>
               <div className="card-actions justify-end">
@@ -31,8 +51,9 @@ const CountryCard = () => {
             </div>
           </div>)
         }
+        </Carousel>
        </div>
-        </div>
+      
     );
 };
 
