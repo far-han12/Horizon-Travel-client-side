@@ -10,7 +10,7 @@ const MyList = () => {
     const[item,setitem]=useState([])
    
     useEffect(() => {
-        fetch(`https://react-tourism-server.vercel.app/tourist/getemail/${user?.email}`)
+        fetch(`  https://react-tourism-server.vercel.app/tourist/getemail/${user?.email}`)
           .then(res => res.json())
           .then(data=> setitem(data))
       },[item])
@@ -29,7 +29,7 @@ Swal.fire({
 
   if (result.isConfirmed) {
     
-    fetch(`https://react-tourism-server.vercel.app/tourist/${_id}`,{
+    fetch(`  https://react-tourism-server.vercel.app/tourist/${_id}`,{
       method:"DELETE",
     })
     .then(res => res.json())

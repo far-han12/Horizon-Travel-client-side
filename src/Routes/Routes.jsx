@@ -43,12 +43,12 @@ import CountrySpots from '../Components/CountrySpots';
         {
           path:"/alltourists",
           element:<Alltourists></Alltourists>,
-          loader: () => fetch("https://react-tourism-server.vercel.app/tourist")
+          loader: () => fetch("  https://react-tourism-server.vercel.app/tourist")
         },
         {
           path:"/mylist",
           element:<PrivateRoute><MyList></MyList></PrivateRoute>
-          // loader: () =>  fetch("https://react-tourism-server.vercel.app/mylist")
+          // loader: () =>  fetch("  https://react-tourism-server.vercel.app/mylist")
         },
         {
           path:"/contactus",
@@ -61,22 +61,22 @@ import CountrySpots from '../Components/CountrySpots';
         {
           path: "/spot/bycountry/:country_Name",
           element: <CountrySpots />,
-          loader: ({ params }) => fetch(`https://react-tourism-server.vercel.app/spot/bycountry/${params.country_Name}`)
+          loader: ({ params }) => fetch(`  https://react-tourism-server.vercel.app/spot/bycountry/${params.country_Name}`)
         },
         {
           path:"/update/:id",
           element:<Update></Update>,
-          loader: ({params}) => fetch(`https://react-tourism-server.vercel.app/tourist/${params.id}`)
+          loader: ({params}) => fetch(`  https://react-tourism-server.vercel.app/tourist/${params.id}`)
           },
         {
           path:"/viewdetails/:id",
           element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`https://react-tourism-server.vercel.app/tourist/${params.id}`)
+          loader: ({params}) => fetch(`  https://react-tourism-server.vercel.app/tourist/${params.id}`)
           },
         // {
         //   path:"/findcountry/:id",
         //   element:<Spotlist></Spotlist>,
-        //   loader: ({params}) => fetch(`https://react-tourism-server.vercel.app/tourist/${params.id}`)
+        //   loader: ({params}) => fetch(`  https://react-tourism-server.vercel.app/tourist/${params.id}`)
         //   },
        
       ]

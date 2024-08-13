@@ -23,7 +23,7 @@ const Update = () => {
         const photo = form.get("photo")
         const updatedinfo = {tourists_spot_name,country_Name,location,description,seasonality,cost,travel_time,visitors,photo}
 
-        fetch(`https://react-tourism-server.vercel.app/tourist/${_id}`, {
+        fetch(`  https://react-tourism-server.vercel.app/tourist/${_id}`, {
     method: 'PUT',
     headers: {
         'content-type': 'application/json'

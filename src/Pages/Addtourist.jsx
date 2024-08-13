@@ -21,7 +21,7 @@ const handleaddtourist = e =>{
     const Email = form.get("email")
     const username = form.get("username")
 const info = {tourists_spot_name,country_Name,location,description,seasonality,cost,travel_time,visitors,photo,Email,username}
-fetch('https://react-tourism-server.vercel.app/tourist', {
+fetch('  https://react-tourism-server.vercel.app/tourist', {
     method: 'POST',
     headers: {
         'content-type': 'application/json'

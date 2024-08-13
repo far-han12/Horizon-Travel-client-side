@@ -25,13 +25,13 @@ const CountryCard = () => {
       }
   };
     // const handleList = e =>{
-    //     fetch(`https://react-tourism-server.vercel.app/findcountry/${country_Name}`)
+    //     fetch(`  https://react-tourism-server.vercel.app/findcountry/${country_Name}`)
     //       .then(res => res.json())
     //       .then(data => console.log(data))
     // }
 
     useEffect(() => {
-        fetch("https://react-tourism-server.vercel.app/country")
+        fetch("  https://react-tourism-server.vercel.app/country")
           .then(res => res.json())
           .then(data=> setItems(data))
       },[])
