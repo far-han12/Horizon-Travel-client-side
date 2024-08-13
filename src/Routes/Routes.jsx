@@ -16,6 +16,7 @@ import Update from '../Pages/Update';
 import ViewDetails from '../Components/ViewDetails';
 import Spotlist from '../Pages/Spotlist';
 import Travelai from '../Components/Travelai';
+import CountrySpots from '../Components/CountrySpots';
 
   const routes = createBrowserRouter([
     {
@@ -56,6 +57,11 @@ import Travelai from '../Components/Travelai';
         {
           path:"/travelai",
           element:<Travelai></Travelai>,
+        },
+        {
+          path: "/spot/bycountry/:country_Name",
+          element: <CountrySpots />,
+          loader: ({ params }) => fetch(`https://react-tourism-server.vercel.app/spot/bycountry/${params.country_Name}`)
         },
         {
           path:"/update/:id",

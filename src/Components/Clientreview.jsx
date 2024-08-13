@@ -10,7 +10,7 @@ const Clientreview = () => {
 				<img src="https://i.ibb.co/qRFmRGb/close-up-portrait-young-hindu-man-isolated-standing-looks-serious-facial-expression-human-nature-emo.jpg" alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
 			</div>
 			<div>
-				<h4 className="font-bold">Tanvir Isthiak</h4>
+				<h4 className="font-bold">George William</h4>
 				<span className="text-xs dark:text-gray-600">7 days ago</span>
 			</div>
 		</div>
@@ -45,7 +45,7 @@ const Clientreview = () => {
 				<img src="https://i.ibb.co/Fz1MNZG/young-man-with-beard-round-glasses.jpg" alt="" className="object-cover w-12 h-12 rounded-full dark:bg-gray-500" />
 			</div>
 			<div>
-				<h4 className="font-bold">Ishmam Alvee</h4>
+				<h4 className="font-bold">Henry Cavil</h4>
 				<span className="text-xs dark:text-gray-600">2 days ago</span>
 			</div>
 		</div>

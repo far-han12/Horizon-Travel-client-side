@@ -57,50 +57,175 @@ e.currentTarget.reset()
         <title>Update Tourists Spot</title>
     </Helmet>
     <NavBar></NavBar>
-    <form onSubmit={handleUpdate} className="max-w-lg p-4 mx-auto mb-20">
-  <div  className="relative z-0 w-full mb-5 group">
-      <input type="text" name="name" id="name"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-      <label   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Tourist Spot Name</label>
-  </div>
-  <div  className="relative z-0 w-full mb-5 group">
-      <input type="text" name="photo" id="photo"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-      <label   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Photo Url</label>
-  </div>
-  <div  className="relative z-0 w-full mb-5 group">
-      <input type="text" name="country" id="countryname"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-      <label   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Country Name</label>
-  </div>
-  <div  className="relative z-0 w-full mb-5 group">
-      <input type="text" name="location" id="location"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-      <label  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Location</label>
-  </div>
-    <div  className="relative z-0 w-full mb-5 group">
-        <textarea name="description" id="last_name5"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-        <label  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Description</label>
-    </div>
-  <div  className="grid md:grid-cols-2 md:gap-6">
-    <div  className="relative z-0 w-full mb-5 group">
-        <input type="text" name="seasonality" id="first_name4"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-        <label  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Seasonality</label>
-    </div>
-    <div  className="relative z-0 w-full mb-5 group">
-        <input type="text" name="cost" id="first"  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-        <label  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Average Cost</label>
-    </div>
-  </div>
-  <div  className="grid md:grid-cols-2 md:gap-6">
-    <div  className="relative z-0 w-full mb-5 group">
-        <input type="text"  name="traveltime"   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-        <label   className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Travel Time </label>
-    </div>
-    <div  className="relative z-0 w-full mb-5 group">
-        <input type="text" name="visitors"   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-500 dark:focus:border-cyan-500 focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
-        <label  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Total Visitors Per Year</label>
-    </div>
-  </div>
-  
-  <button type="submit"  className="text-black focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-cyan-400 hover:bg-cyan-500 dark:focus:ring-cyan-800">Update</button>
-</form>
+    <form
+        onSubmit={handleUpdate}
+        className="w-full max-w-lg p-8 bg-white/10 backdrop-blur-lg rounded-xl shadow-lg border border-white/20"
+      >
+        <h2 className="text-2xl font-bold text-white text-center mb-8">Update Tourist Spot</h2>
+
+        <div className="relative z-0 mb-8">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+            placeholder="Tourist Spot Name"
+            required
+          />
+          <label
+            htmlFor="name"
+            className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Tourist Spot Name
+          </label>
+        </div>
+
+        <div className="relative z-0 mb-8">
+          <input
+            type="text"
+            name="photo"
+            id="photo"
+            className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+            placeholder="Photo Url"
+            required
+          />
+          <label
+            htmlFor="photo"
+            className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Photo Url
+          </label>
+        </div>
+
+        <div className="relative z-0 mb-8">
+          <input
+            type="text"
+            name="country"
+            id="countryname"
+            className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+            placeholder="Country Name"
+            required
+          />
+          <label
+            htmlFor="countryname"
+            className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Country Name
+          </label>
+        </div>
+
+        <div className="relative z-0 mb-8">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+            placeholder="Location"
+            required
+          />
+          <label
+            htmlFor="location"
+            className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Location
+          </label>
+        </div>
+
+        <div className="relative z-0 mb-8">
+          <textarea
+            name="description"
+            id="description"
+            className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+            placeholder="Description"
+            required
+          />
+          <label
+            htmlFor="description"
+            className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Description
+          </label>
+        </div>
+
+        <div className="grid md:grid-cols-2 md:gap-6 mb-8">
+          <div className="relative z-0 mb-8 md:mb-0">
+            <input
+              type="text"
+              name="seasonality"
+              id="seasonality"
+              className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+              placeholder="Seasonality"
+              required
+            />
+            <label
+              htmlFor="seasonality"
+              className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+              Seasonality
+            </label>
+          </div>
+
+          <div className="relative z-0">
+            <input
+              type="text"
+              name="cost"
+              id="cost"
+              className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+              placeholder="Average Cost"
+              required
+            />
+            <label
+              htmlFor="cost"
+              className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+              Average Cost
+            </label>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 md:gap-6 mb-8">
+          <div className="relative z-0 mb-8 md:mb-0">
+            <input
+              type="text"
+              name="traveltime"
+              id="traveltime"
+              className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+              placeholder="Travel Time"
+              required
+            />
+            <label
+              htmlFor="traveltime"
+              className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+              Travel Time
+            </label>
+          </div>
+
+          <div className="relative z-0">
+            <input
+              type="text"
+              name="visitors"
+              id="visitors"
+              className="peer block w-full px-0 py-4 text-lg text-white bg-transparent border-0 border-b-2 border-white focus:outline-none focus:border-cyan-400 placeholder-transparent"
+              placeholder="Total Visitors Per Year"
+              required
+            />
+            <label
+              htmlFor="visitors"
+              className="absolute text-lg text-white duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+              Total Visitors Per Year
+            </label>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          className="w-full py-3 text-lg font-semibold text-cyan-500 bg-white/20 rounded-full shadow-lg hover:bg-white/30 focus:outline-none focus:ring-4 focus:ring-cyan-300"
+        >
+          Update
+        </button>
+      </form>
 <Footer></Footer>
 </div>
     );

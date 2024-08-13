@@ -50,9 +50,9 @@ const Travelai = () => {
       </div>
         <form
       onSubmit={generateAnswer}
-      className="w-full  mx-auto  text-center rounded-lg shadow-lg bg-white py-6 px-4 transition-all duration-500 transform hover:scale-105"
+      className="w-full  mx-auto  text-center rounded-lg shadow-lg bg-white  py-6 px-4 transition-all duration-500 transform hover:scale-105"
     >
-        <h1 className="text-4xl flex justify-center mt-5  font-bold text-blue-500 mb-4 animate-bounce">Travel AI <MdOutlineCardTravel></MdOutlineCardTravel></h1>
+        <h1 className="text-4xl flex justify-center mt-5  font-bold text-blue-500 mb-4 animate-pulse">Travel AI <MdOutlineCardTravel></MdOutlineCardTravel></h1>
    
       <textarea
         required
@@ -71,7 +71,7 @@ const Travelai = () => {
         Generate answer
       </button>
     </form>
-    <div className="w-full mx-auto text-center rounded-lg bg-white my-4 shadow-lg transition-all duration-500 transform hover:scale-105">
+    <div className="w-full mx-auto text-center rounded-lg  bg-white  my-4 shadow-lg transition-all duration-500 transform hover:scale-105">
       <ReactMarkdown className="p-4">{answer}</ReactMarkdown>
     </div>
         </div>

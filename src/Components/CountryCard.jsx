@@ -46,7 +46,8 @@ const CountryCard = () => {
               <h2 className="card-title">{s.country_Name}</h2>
               <p>{s.description}</p>
               <div className="card-actions justify-end">
-                <Link to={`/spotlist/${s._id}`}  className="btn text-black bg-cyan-400">View Spots</Link>
+              <Link to={`/spot/bycountry/${s.country_Name}`} className="btn text-black bg-cyan-400">View Spots</Link>
+
               </div>
             </div>
           </div>)
