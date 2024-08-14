@@ -14,7 +14,6 @@ import Alltourists from '../Pages/Alltourists';
 import MyList from '../Pages/MyList';
 import Update from '../Pages/Update';
 import ViewDetails from '../Components/ViewDetails';
-import Spotlist from '../Pages/Spotlist';
 import Travelai from '../Components/Travelai';
 import CountrySpots from '../Components/CountrySpots';
 
@@ -48,7 +47,6 @@ import CountrySpots from '../Components/CountrySpots';
         {
           path:"/mylist",
           element:<PrivateRoute><MyList></MyList></PrivateRoute>
-          // loader: () =>  fetch("  https://react-tourism-server.vercel.app/mylist")
         },
         {
           path:"/contactus",
@@ -73,11 +71,7 @@ import CountrySpots from '../Components/CountrySpots';
           element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
           loader: ({params}) => fetch(`  https://react-tourism-server.vercel.app/tourist/${params.id}`)
           },
-        // {
-        //   path:"/findcountry/:id",
-        //   element:<Spotlist></Spotlist>,
-        //   loader: ({params}) => fetch(`  https://react-tourism-server.vercel.app/tourist/${params.id}`)
-        //   },
+      
        
       ]
       

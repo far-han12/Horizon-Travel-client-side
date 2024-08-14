@@ -24,18 +24,12 @@ const CountryCard = () => {
           items: 1
       }
   };
-    // const handleList = e =>{
-    //     fetch(`  https://react-tourism-server.vercel.app/findcountry/${country_Name}`)
-    //       .then(res => res.json())
-    //       .then(data => console.log(data))
-    // }
 
     useEffect(() => {
         fetch("https://react-tourism-server.vercel.app/country")
           .then(res => res.json())
           .then(data=> setItems(data))
       },[])
-      
     return (
         <div className=' mx-auto overflow-hidden p-4 '>
          <Carousel responsive={responsive} swipeable={true} draggable={true}  infinite={true} >
