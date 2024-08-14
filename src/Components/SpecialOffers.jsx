@@ -13,7 +13,7 @@ const SpecialOffers = () => {
     return (
     
       <div className={`fixed z-20 mx-auto top-20 left-0 right-0 w-[300px] md:w-[600px] lg:w-[700px] bg-cover h-96 text-white ${isVisible ? '' : 'hidden'}`} 
-      style={{ backgroundImage: 'url(https://i.ibb.co/DCzShcs/cascade-boat-clean-china-natural-rural.jpg)' }}
+      style={{ backgroundImage: 'url(https://i.ibb.co/DVTHsgM/cascade-boat-clean-china-natural-rural.webp)' }}
       onClick={handleAdClick}>
 <div className="hero-overlay bg-opacity-50 ">
 <div className="hero-content text-center text-neutral-content">

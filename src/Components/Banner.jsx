@@ -41,7 +41,7 @@ const Banner = () => {
             >
 
                 <SwiperSlide>
-                    <div className='relative bg-[url(https://i.ibb.co/bWz8VKz/small-house-built-peaceful-green-hill-high-up-mountains.jpg)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                    <div className='relative bg-[url(https://i.ibb.co/SNgt44W/small-house-built-peaceful-green-hill-high-up-mountains.webp)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
                         <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
                         <div className='text-center text-white z-10'>
                             <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Explore the World with Ease</h1>
@@ -53,7 +53,7 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='relative bg-[url(https://i.ibb.co/8KDVwXr/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                    <div className='relative bg-[url(https://i.ibb.co/YcZRrGf/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.webp)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
                         <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
                         <div className='text-center text-white z-10'>
                             <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Journey Beyond Boundaries</h1>
@@ -65,7 +65,7 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='relative bg-[url(https://i.ibb.co/MM8rMqC/pexels-rachel-claire-7276804.jpg)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                    <div className='relative bg-[url(https://i.ibb.co/94r1LG8/pexels-rachel-claire-7276804.webp)] bg-cover bg-center bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
                         <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
                         <div className='text-center text-white z-10'>
                             <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Hassle-Free Travel</h1>
@@ -77,7 +77,7 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='relative bg-[url(https://i.ibb.co/NNk7VWs/big-entrance-gate-bali-indonesia.jpg)] bg-cover bg-top bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
+                    <div className='relative bg-[url(https://i.ibb.co/D57FYGv/big-entrance-gate-bali-indonesia.webp)] bg-cover bg-top bg-no-repeat h-[300px] md:h-[400px] lg:h-[600px] w-full flex justify-center items-center'>
                         <div className='absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60'></div>
                         <div className='text-center text-white z-10'>
                             <h1 className=' text-2xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-5 lg:mb-10'>Adventure Awaits You</h1>

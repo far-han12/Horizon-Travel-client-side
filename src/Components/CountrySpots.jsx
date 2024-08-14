@@ -23,11 +23,15 @@ const CountrySpots = () => {
   }, [country_Name]);
   
   if (loading) {
-    return <div className=' fixed left-1/2 top-1/2  flex justify-center items-center '><div className="w-16 h-16 border-4 border-dashed  rounded-full animate-spin border-cyan-600 dark:border-cyan-600"></div></div>
+    return   <div className='fixed inset-0 flex justify-center items-center'>
+    <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-cyan-600 dark:border-cyan-600"></div>
+  </div>
   }
   return (
     <div>
+       
     <NavBar />
+  
     <h1 className='font-bold text-center my-4 text-xl md:text-3xl lg:text-4xl'>Tourists Spots in {country_Name}</h1>
     {spot.length === 0 ? (
       <p className='text-center text-gray-500'>No tourist spots found for this country.</p>
