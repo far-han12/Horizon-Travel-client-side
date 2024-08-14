@@ -61,7 +61,7 @@ import CountrySpots from '../Components/CountrySpots';
         {
           path: "/spot/bycountry/:country_Name",
           element: <CountrySpots />,
-          loader: ({ params }) => fetch(`  https://react-tourism-server.vercel.app/spot/bycountry/${params.country_Name}`)
+          loader: ({ params }) => fetch(`https://react-tourism-server.vercel.app/spot/bycountry/${params.country_Name}`)
         },
         {
           path:"/update/:id",

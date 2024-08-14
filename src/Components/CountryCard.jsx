@@ -31,7 +31,7 @@ const CountryCard = () => {
     // }
 
     useEffect(() => {
-        fetch("  https://react-tourism-server.vercel.app/country")
+        fetch("https://react-tourism-server.vercel.app/country")
           .then(res => res.json())
           .then(data=> setItems(data))
       },[])

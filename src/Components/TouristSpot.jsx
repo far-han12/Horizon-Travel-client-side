@@ -29,7 +29,7 @@ const TouristSpot = () => {
     const [datalength, setdatalength] = useState(6);
 
     useEffect(() => {
-        fetch("  https://react-tourism-server.vercel.app/tourist")
+        fetch("https://react-tourism-server.vercel.app/tourist")
           .then(res => res.json())
           .then(data => {
             setspot(data.slice(0, datalength)); // Adjust data slice here for initial load

@@ -9,7 +9,7 @@ const CountrySpots = () => {
   const [spot, setSpots] = useState([]);
 console.log(country_Name);
   useEffect(() => {
-    fetch(`  https://react-tourism-server.vercel.app/spot/bycountry/${country_Name}`)
+    fetch(`https://react-tourism-server.vercel.app/spot/bycountry/${country_Name}`)
       .then(response => response.json())
       .then(data => setSpots(data))
       .catch(error => console.error('Error loading spots:', error));
