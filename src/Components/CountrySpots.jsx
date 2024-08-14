@@ -14,11 +14,13 @@ const CountrySpots = () => {
     <div>
       <NavBar></NavBar>
      <h1 className='font-bold text-center my-4 text-xl md:text-3xl lg:text-4xl'>Tourists Spots of {country_Name}</h1>
-      
+     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
      {spot.map((s, p) => (
-                    <TouristCard s={s} key={p} />
-                 
+                  <div key={p} className="transform transition duration-500 hover:scale-105  p-4 ">
+                    <TouristCard s={s} />
+                  </div>
                 ))}
+     </div>
     </div>
   );
 };
