@@ -22,7 +22,7 @@ const Banner = () => {
                     <div className='text-lg md:text-2xl lg:text-4xl mb-2 font-bold'>
                         <p>Discover Your Next Adventure with </p>
                         <hr className='border-t-2 border-premium mt-1 md:mt-2 lg:mt-3 mb-1 lg:mb-2' />
-                        <p className=' animate__animated  animate__infinite animate__jackInTheBox'>Horizon Travel</p>
+                        <p className=' animate__animated  animate__infinite animate-pulse '>Horizon Travel</p>
                     </div>
                 </div>
             </div>
