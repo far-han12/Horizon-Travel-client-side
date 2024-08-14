@@ -22,7 +22,7 @@ const CountrySpots = () => {
                 ))}
      </div>
      
-     <Link className='btn  bg-cyan-400 border-0  mt-4 text-black flex justify-center w-[200px] mx-auto hover:bg-cyan-500' to='/'>Back to Home Page</Link>
+     <Link className='btn  bg-cyan-400 border-0  my-4  text-black flex justify-center w-[200px] mx-auto hover:bg-cyan-500' to='/'>Back to Home Page</Link>
     
     </div>
   );
