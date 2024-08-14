@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import TouristCard from './TouristCard';
 import NavBar from './NavBar';
 const CountrySpots = () => {
@@ -21,6 +21,9 @@ const CountrySpots = () => {
                   </div>
                 ))}
      </div>
+     
+     <Link className='btn  bg-cyan-400 border-0  mt-4 text-black flex justify-center w-[200px] mx-auto hover:bg-cyan-500' to='/'>Back to Home Page</Link>
+    
     </div>
   );
 };
