@@ -14,6 +14,7 @@ import CountryCard from '../Components/CountryCard';
 import Travelai from '../Components/Travelai';
 import { Link } from 'react-router-dom';
 import { FaRobot } from "react-icons/fa";
+import ReviewForm from '../Components/ReviewForm';
 const Home = () => {
     
     return (
@@ -31,7 +32,11 @@ const Home = () => {
                <TouristSpot ></TouristSpot>
                </div>
             </div>
+            <div>
+                    <ReviewForm></ReviewForm>
+                </div>
             <div >
+             
                 <h2 className='text-center font-bold "
 
      data-aos-duration="1000" lg:text-3xl'>Client Reviews</h2>
