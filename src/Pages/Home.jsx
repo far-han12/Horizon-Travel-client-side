@@ -32,9 +32,7 @@ const Home = () => {
                <TouristSpot ></TouristSpot>
                </div>
             </div>
-            <div>
-                    <ReviewForm></ReviewForm>
-                </div>
+         
             <div >
              
                 <h2 className='text-center font-bold "
@@ -55,6 +53,11 @@ const Home = () => {
         
                 <Link className="btn btn-wide  mx-auto flex justify-center text-black dark:text-white bg-cyan-400 hover:bg-cyan-500 focus:shadow-lg  transition-transform transform hover:scale-110 active:scale-95 duration-300" to='/travelai'>Explore Our Travel AI <FaRobot></FaRobot> </Link>
             </div>
+            <div className='my-5 lg:my-8'>
+                <h1 className='text-center font-bold  lg:text-3xl my-10'>Thank you for choosing Horizon Travel!</h1>
+                <h2 className='text-center font-normal  text-xl mb-5'> To help us improve and serve you better, we would be grateful if you could share your experience by leaving a review on our website</h2>
+                    <ReviewForm></ReviewForm>
+                </div>
             <Footer></Footer>
         </div>
     );
