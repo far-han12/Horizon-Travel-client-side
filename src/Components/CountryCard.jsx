@@ -31,10 +31,10 @@ const CountryCard = () => {
           .then(data=> setItems(data))
       },[])
     return (
-        <div className=' mx-auto overflow-hidden p-4 '>
-         <Carousel className='py-4' responsive={responsive} swipeable={true} draggable={true}  infinite={true} >
+        <div className=' mx-auto  overflow-hidden p-4 '>
+         <Carousel className='py-4 ' responsive={responsive} swipeable={true} draggable={true}  infinite={true} >
        {
-            items.map((s,p)=>    <div  key={p} className="card transform transition duration-500 bg-base-200 p-4 md:p-0 lg:p-0  hover:scale-105  mx-auto card-compact  md:w-[350px] lg:w-96 h-[600px] ">
+            items.map((s,p)=>    <div  key={p} className="card transform transition duration-500 bg-base-200  p-4 md:p-0 lg:p-0  hover:scale-105  mx-auto card-compact  md:w-[350px] lg:w-96 h-[600px] ">
             <figure><img className='w-[400px] h-80' src={s.photo} alt="Shoes" /></figure>
             <div className="card-body flex-wrap">
               <h2 className="card-title">{s.country_Name}</h2>
