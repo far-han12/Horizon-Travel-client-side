@@ -34,7 +34,7 @@ const CountryCard = () => {
         <div className=' mx-auto  overflow-hidden p-4 '>
          <Carousel className='py-4 ' responsive={responsive} swipeable={true} draggable={true}  infinite={true} >
        {
-            items.map((s,p)=>    <div  key={p} className="card  bg-base-200   md:p-0 lg:p-0    mx-auto card-compact w-[320px] md:w-[350px] lg:w-96 h-[600px] ">
+            items.map((s,p)=>    <div  key={p} className="card  bg-base-200   md:p-0 lg:p-0    mx-auto card-compact w-[300px] md:w-[350px] lg:w-96 h-[600px] ">
             <figure><img className='w-[400px] h-80' src={s.photo} alt="Shoes" /></figure>
             <div className="card-body flex-wrap">
               <h2 className="card-title">{s.country_Name}</h2>
