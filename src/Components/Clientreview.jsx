@@ -46,19 +46,17 @@ const Clientreview = () => {
                                 <span className="text-xs dark:text-gray-600">{review.daysAgo} days ago</span>
                             </div>
                         </div>
-                        <div className="flex items-center space-x-2   dark:text-yellow-700">
-                            <div className="rating rating-sm lg:rating-md rating-half">
-                                {[...Array(5)].map((_, i) => (
-                                    <input
-                                        key={i}
-                                        type="radio"
-                                        className={`bg-orange-500 mask w-full mask-star-2 ${i < review.rating ? 'mask-half-2' : 'mask-half-1'}`}
-                                        checked={i + 1 === Math.ceil(review.rating)}
-                                    />
-                                ))}
-                            </div>
-                            <span className="text-xl font-bold">{review.rating}</span>
-                        </div>
+                        <div className="flex items-center space-x-2">
+    <div className="flex">
+        {[...Array(5)].map((_, i) => (
+            <span
+                key={i}
+                className={`inline-block w-4 h-4 mask mask-star-2 ${i < review.rating ? 'bg-yellow-500' : 'bg-gray-300'}`}
+            ></span>
+        ))}
+    </div>
+    <span className="text-xl font-bold">{review.rating}</span>
+</div>
                     </div>
                     <div className="p-4 space-y-2 text-sm dark:text-black">
                         <p>{review.text}</p>

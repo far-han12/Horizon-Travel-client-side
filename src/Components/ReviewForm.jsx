@@ -1,8 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const ReviewForm = () => {
  
+  
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -28,10 +30,15 @@ const ReviewForm = () => {
                 icon: 'success',
                 confirmButtonText: 'OK'
             });
-
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);        
             // Reset the form
             e.target.reset();
+   
         })
+        
+        
         // Simulate sending data to the backend and getting the "days ago" response
         const today = new Date();
         const reviewDate = today; // Assume reviewDate is the submission date
