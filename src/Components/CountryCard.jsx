@@ -31,7 +31,7 @@ const CountryCard = () => {
           .then(data=> setItems(data))
       },[])
     return (
-        <div className=' mx-auto overflow-hidden  '>
+        <div className=' mx-auto overflow-hidden p-4 '>
          <Carousel className='py-4' responsive={responsive} swipeable={true} draggable={true}  infinite={true} >
        {
             items.map((s,p)=>    <div  key={p} className="card transform transition duration-500 bg-base-200 p-4 md:p-0 lg:p-0  hover:scale-105  mx-auto card-compact  md:w-[350px] lg:w-96 h-[600px] ">
