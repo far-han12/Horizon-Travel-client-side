@@ -26,7 +26,7 @@ const Home = () => {
             <div className='mb-10'><Banner></Banner></div>
           
             <div  className='my-10 '>
-                <h2 className='text-center font-bold  lg:text-3xl mb-10'>Tourists Spot</h2>
+                <h2 className='text-center font-bold text-xl lg:text-3xl mb-10'>Tourists Spot</h2>
                 <p className='text-center font-light  text-xl mb-10'>Whether you're seeking a relaxing beach getaway, an adventurous jungle trek,  or a cultural immersion <br /> in bustling cities, we have the perfect itinerary for you.</p>
                <div className='mx-auto'>
                <TouristSpot ></TouristSpot>
@@ -37,13 +37,13 @@ const Home = () => {
              
                 <h2 className='text-center font-bold "
 
-     data-aos-duration="1000" lg:text-3xl'>Client Reviews</h2>
-                <p className='text-center font-normal text-xl mt-5  mb-10'>Discover why our clients rave about our service and products in their own words.</p>
+    text-xl lg:text-3xl'>Client Reviews</h2>
+                <p className='text-center font-normal text-base lg:text-xl mt-5  mb-10'>Discover why our clients rave about our service and products in their own words.</p>
                 <Clientreview></Clientreview>
             </div>
             <div className=' my-10  '>
-                <h2 className='text-center mb-5 font-bold lg:text-3xl'>Southeast Asia</h2>
-                <p className='text-center mb-8 lg:text-xl'>Southeast Asia is a popular tourist destination, attracting millions of visitors each year</p>
+                <h2 className='text-center mb-5 font-bold text-xl lg:text-3xl'>Southeast Asia</h2>
+                <p className='text-center mb-8 text-base lg:text-xl'>Southeast Asia is a popular tourist destination, attracting millions of visitors each year</p>
                 <CountryCard></CountryCard>
             </div>
             <div>
@@ -55,7 +55,7 @@ const Home = () => {
             </div>
             <div className='my-5 lg:my-8'>
                 <h1 className='text-center font-bold  lg:text-3xl my-10'>Thank you for choosing Horizon Travel!</h1>
-                <h2 className='text-center font-normal  text-xl mb-5'> To help us improve and serve you better, we would be grateful if you could share your experience by leaving a review on our website</h2>
+                <h2 className='text-center font-normal  text-base lg:text-xl mb-5'> To help us improve and serve you better, we would be grateful if you could share your experience by leaving a review on our website</h2>
                     <ReviewForm></ReviewForm>
                 </div>
             <Footer></Footer>

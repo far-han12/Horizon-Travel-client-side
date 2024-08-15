@@ -2,10 +2,7 @@ import React, { useRef } from 'react';
 import Swal from 'sweetalert2';
 
 const ReviewForm = () => {
-    const nameRef = useRef();
-    const imageRef = useRef();
-    const ratingRef = useRef();
-    const reviewTextRef = useRef();
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -46,7 +43,7 @@ const ReviewForm = () => {
     };
 
     return (
-        <form className="review-form max-w-md mx-auto mt-8" onSubmit={handleSubmit}>
+        <form className="review-form max-w-md mx-auto mt-8 p-4 " onSubmit={handleSubmit}>
             <div className="mb-4">
                 <label className="block text-gray-700 font-bold mb-2">Name:</label>
                 <input
