@@ -72,7 +72,7 @@ const Travelai = () => {
       </button>
     </form>
     <div className="w-full mx-auto text-center rounded-lg  bg-white  my-4 shadow-lg transition-all duration-500 transform hover:scale-105">
-      <ReactMarkdown className="p-4">{answer}</ReactMarkdown>
+      <ReactMarkdown className="p-4 text-left ">{answer}</ReactMarkdown>
     </div>
         </div>
       </div>
