@@ -137,7 +137,7 @@ showPassword ? <FaEye ></FaEye> : <FaEyeSlash></FaEyeSlash>
           }
           </div>
           <div className="form-control mt-6">
-            <button className="btn hover:bg-cyan-400 bg-cyan-300 border-0 border-cyan-200">Register</button>
+            <button className="btn hover:bg-cyan-400 bg-cyan-300 border-0 text-black border-cyan-200">Register</button>
           </div>
           <p className="text-center  mt-4">
             Already have an account?{" "}
