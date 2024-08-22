@@ -34,7 +34,7 @@ const Clientreview = () => {
         <div className='m-4 overflow-hidden'>
 		<Carousel className='py-4' responsive={responsive} rewind={false}  infinite={true} autoPlay={true} autoPlaySpeed={1000} arrows={false} >
             {reviews.map((review, index) => (
-                <div key={index} className="container overflow-hidden mx-auto space-x-2   flex flex-col h-full  w-[300px] md:w-[350px] lg:w-[400px] p-4  divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 bg-gray-200 dark:text-gray-800">
+                <div key={index} className="container overflow-hidden mx-auto space-x-2   flex flex-col h-full  w-[300px] md:w-[350px] lg:w-[400px] p-4  divide-y rounded-md dark:divide-gray-300 bg-gray-200  dark:text-gray-800">
                     <div className="flex justify-between   p-4">
                         <div className="flex space-x-4">
                             <div>
