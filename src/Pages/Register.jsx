@@ -79,16 +79,16 @@ Swal.fire({
       <div data-aos="zoom-in" data-aos-duration="1500" className='hero h-full lg:min-h-[calc(100vh-70px)]   animate-delay-2s  ' >
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold text-black">Register now!</h1>
-      <p className="py-6 text-black">Embark on your journey  with Horizon Travel by your side. Explore our website today and discover the endless possibilities that await you. </p>
+      <h1 className="text-5xl font-bold">Register now!</h1>
+      <p className="py-6 ">Embark on your journey  with Horizon Travel by your side. Explore our website today and discover the endless possibilities that await you. </p>
     </div>
 
 
       <div className="card shrink-0 w-full bg-base-100  max-w-sm shadow-2xl mx-auto ">
-        <form onSubmit={handleRegister} className="card-body text-black">
+        <form onSubmit={handleRegister} className="card-body ">
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-black">Name</span>
+              <span className="label-text ">Name</span>
             </label>
             <input
               type="text"
@@ -100,13 +100,13 @@ Swal.fire({
           </div>
           <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-black">Photo URL</span>
+                            <span className="label-text ">Photo URL</span>
                         </label>
                         <input type="text" required name="photo" placeholder="Photo URL" className="input input-bordered bg-transparent border-2 border-cyan-400 " />
                     </div>
           <div className="form-control ">
             <label className="label">
-              <span className="label-text text-black">Email</span>
+              <span className="label-text ">Email</span>
             </label>
             <input
               type="email"
@@ -118,7 +118,7 @@ Swal.fire({
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-black">Password</span>
+              <span className="label-text ">Password</span>
             </label>
           
             <div className="relative form-control">
@@ -128,7 +128,7 @@ showPassword ? <FaEye ></FaEye> : <FaEyeSlash></FaEyeSlash>
 }</span>
 </div>
             <label className="label">
-              <a href="#" className="label-text-alt link text-black link-hover">
+              <a href="#" className="label-text-alt link  link-hover">
                 Forgot password?
               </a>
             </label>
@@ -139,7 +139,7 @@ showPassword ? <FaEye ></FaEye> : <FaEyeSlash></FaEyeSlash>
           <div className="form-control mt-6">
             <button className="btn hover:bg-cyan-400 bg-cyan-300 border-0 border-cyan-200">Register</button>
           </div>
-          <p className="text-center text-black mt-4">
+          <p className="text-center  mt-4">
             Already have an account?{" "}
             <Link className="text-cyan-600 font-bold" to="/login">
               Login
