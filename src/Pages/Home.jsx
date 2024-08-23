@@ -27,7 +27,7 @@ const Home = () => {
           
             <div  className='my-10 '>
                 <h2 className='text-center font-bold text-xl lg:text-3xl mb-10'>Tourists Spot</h2>
-                <p className='text-center font-light  text-xl mb-10'>Whether you're seeking a relaxing beach getaway, an adventurous jungle trek,  or a cultural immersion <br /> in bustling cities, we have the perfect itinerary for you.</p>
+                <p className='text-center font-light text-base lg:text-xl mb-10'>Whether you're seeking a relaxing beach getaway, an adventurous jungle trek,  or a cultural immersion <br /> in bustling cities, we have the perfect itinerary for you.</p>
                <div className='mx-auto'>
                <TouristSpot ></TouristSpot>
                </div>
