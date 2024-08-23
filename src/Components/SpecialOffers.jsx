@@ -12,7 +12,7 @@ const SpecialOffers = () => {
 
   return (
     <div
-      className={`fixed z-20 mx-auto top-20 left-0 right-0 w-[300px] md:w-[600px] lg:w-[700px] bg-cover h-96 text-white ${isVisible ? '' : 'hidden'}`}
+      className={`fixed z-20 mx-auto top-20 left-0 right-0 w-[300px] md:w-[500px] lg:w-[600px] bg-cover h-96 text-white ${isVisible ? '' : 'hidden'}`}
       style={{ backgroundImage: 'url(https://i.ibb.co/DVTHsgM/cascade-boat-clean-china-natural-rural.webp)' }}
     >
       <div className="relative hero-overlay bg-opacity-50">
