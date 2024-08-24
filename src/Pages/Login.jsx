@@ -61,7 +61,7 @@ const Login = () => {
           showConfirmButton: false,
           timer: 1500
         });
-    navigate(location?.state ? location.state : '/login');
+    navigate(location?.state ? location.state : '/');
     })
     .catch(error => {
         toast.error('Wrong Password or email');
@@ -80,7 +80,7 @@ githubLogin()
     showConfirmButton: false,
     timer: 1500
   });
-navigate(location?.state ? location.state : '/login');
+navigate(location?.state ? location.state : '/');
 })
 .catch(error => {
   toast.error('Wrong Password or email');
