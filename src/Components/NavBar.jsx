@@ -109,7 +109,7 @@ const NavBar = () => {
             animate={open ? "open" : "closed"}
             variants={variants}
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-40 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-lg dropdown-content mt-3 z-40 p-2 shadow bg-base-100 rounded-box w-52"
           >
             {links}
           </motion.ul>
